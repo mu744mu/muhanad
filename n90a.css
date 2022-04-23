@@ -1,0 +1,418 @@
+ @keyframes moving {
+
+            0%,
+            90% {
+                top: -100px;
+                left: 0;
+            }
+
+            100% {
+                top: -100px;
+                left: 0;
+            }
+        }
+
+
+        .tooltiptext {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 0px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: -5;
+            transition: opacity 0.3s;
+        }
+
+        .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltiptext:hover {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+        .border {
+            border-color: #989595 !important;
+        }
+
+        .hand.nosel {
+            border-radius: 0px !important;
+        }
+
+        .broadcasters {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: #000;
+            left: 0
+        }
+
+        .broadcasters>div {
+            max-width: 260px;
+        }
+
+
+        .broadcasters>div>.prods {
+            float: right;
+            width: 40px;
+            height: 40px;
+            right: 5px;
+            top: 8px;
+            color: palevioletred;
+            border: 2px solid;
+            margin: 0 1px;
+            text-align: center;
+            border-radius: 0%;
+            background-color: white;
+        }
+
+        .broadcasters>div>.prods>.fa {
+            font-size: 28px !important;
+            text-align: center;
+            margin-top: 5px;
+            color: darkgray;
+        }
+
+        ::-webkit-scrollbar {
+            height: px;
+        }
+
+
+        .broadcasters>div>.prod {
+            float: right;
+            width: 50px;
+            height: 52px;
+            border: 2px solid gainsboro;
+            margin: 0 1px;
+            text-align: center;
+            border-radius: 0%;
+            background-color: white;
+        }
+
+        .broadcasters>div>.prod>.fa-microphone {
+            font-size: 28px !important;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .broadcasters>div>.prod>hr {
+            margin: 0;
+            border-top-color: #d9534f;
+        }
+
+        .broadcasters>div>.prod>.evant>i {
+            position: relative;
+            font-size: 16px !important;
+            text-align: center;
+            top: 36px;
+            height: 18px;
+            border-radius:0%;
+            background-color: #ffffffc7;
+            border: 1px solid #d9534f70;
+        }
+
+        .broadcasters>div>.prods>.ismute {
+            position: absolute;
+            height: 3px;
+            background: gray;
+            display: none;
+            width: 38px;
+            margin-left: -2px;
+            margin-top: 17px;
+            transform: rotate(135deg);
+        }
+
+        .broadcasters>div>.prod>.ismute {
+            position: absolute;
+            height: 3px;
+            background: gray;
+            display: none;
+            width: 50px;
+            margin-left: -3px;
+            margin-top: 22px;
+            transform: rotate(135deg);
+        }
+
+        .u-topic.dots {
+            white-space: nowrap;
+            max-width: 130%;
+        }
+
+        .is_speaking {
+            box-shadow: 0px 0px 10px #00ff00
+        }
+
+        .loginDiv {
+            float: right;
+            width: 99%;
+            margin-right: -200%;
+            margin-top: 20px;
+            background-color: #f93634;
+            -webkit-animation: daa 7s 1 linear;
+            -moz-animation: daa 7s 1 linear;
+            -o-animation: daa 7s 1 linear;
+            animation: daa 7s 1 linear;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-delay: 5s;
+            -moz-animation-delay: 5s;
+            -o-animation-delay: 5s;
+            animation-delay: 5s;
+            border: 2px solid #af020b;
+            border-radius: 0px 0 0 0px;
+            background-image: url(imgs/banner.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 2333;
+        }
+
+        .loginItms {
+            position: absolute;
+            overflow: hidden;
+            right: -1000px;
+            top: 30px;
+            width: 250px;
+            z-index: 2333;
+        }
+
+        .loginImg {
+            float: right;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #ed5555;
+            margin: 1px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 0px;
+            z-index: 2333;
+        }
+
+        .loginLogo {
+            float: right;
+            margin: 1px;
+            margin-top: -20px;
+            opacity: 3;
+            z-index: 2333;
+        }
+
+        .loginIco {
+            float: right;
+            margin: 0px 1px 1px;
+            max-height: 18px;
+            background-color: white;
+            padding: 1px;
+            border-radius: 0px;
+            opacity: 3;
+            z-index: 2333;
+        }
+
+        .loginFlog {
+            float: left;
+            margin: 2px 0 5px 5px;
+            max-height: 15px;
+            z-index: 2333;
+        }
+
+        .loginUserName {
+            font-size: 15px !important;
+            float: right;
+            font-family: arial;
+            font-weight: 9000;
+            max-width: 170px !important;
+            min-width: 100px !important;
+            text-align: right;
+            text-shadow: -1px 1px 2px #fff;
+            color: #842c2a;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            opacity: 3;
+            z-index: 2333;
+        }
+
+        @keyframes daa {
+            0% {
+                margin-right: -100%;
+            }
+
+            5% {
+                margin-right: 0%;
+            }
+
+            20%,
+            40%,
+            60%,
+            80%,
+            95% {
+                border-color: #b9941c;
+                margin-right: 0%;
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                border-color: #af020b;
+                margin-right: 0%;
+            }
+
+            100% {
+                border-color: #af020b;
+                margin-right: -100%;
+            }
+        }
+
+        @-webkit-keyframes daa {
+            0% {
+                margin-right: -100%;
+            }
+
+            5% {
+                margin-right: 0%;
+            }
+
+            20%,
+            40%,
+            60%,
+            80%,
+            95% {
+                border-color: #b9941c;
+                margin-right: 0%;
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                border-color: #af020b;
+                margin-right: 0%;
+            }
+
+            100% {
+                border-color: #af020b;
+                margin-right: -100%;
+            }
+        }
+
+        @-moz-keyframes daa {
+            0% {
+                margin-right: -100%;
+            }
+
+            5% {
+                margin-right: 0%;
+            }
+
+            20%,
+            40%,
+            60%,
+            80%,
+            95% {
+                border-color: #b9941c;
+                margin-right: 0%;
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                border-color: #af020b;
+                margin-right: 0%;
+            }
+
+            100% {
+                border-color: #af020b;
+                margin-right: -100%;
+            }
+        }
+
+        @-o-keyframes daa {
+            0% {
+                margin-right: -100%;
+            }
+
+            5% {
+                margin-right: 0%;
+            }
+
+            20%,
+            40%,
+            60%,
+            80%,
+            95% {
+                border-color: #b9941c;
+                margin-right: 0%;
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                border-color: #af020b;
+                margin-right: 0%;
+            }
+
+            100% {
+                border-color: #af020b;
+                margin-right: -100%;
+            }
+        }
+    </style>
+<style>
+        * {
+            font-family: serif;
+            font-weight: bold;
+            text-shadow: none !important;
+            font-size: 15px !important;
+        }
+
+        .ae {
+            border: 1px solid black;
+            border-radius: 0px;
+            margin: 1px;
+            float: left;
+            padding: 6px 2px;
+        }
+
+        .pmsgc {
+            background-color: rgba(0, 77, 255, 0.08) !important;
+            width: 51px;
+            border-radius: 0%;
+            margin-left: 1px;
+            margin-top: 1px;
+        }
+
+        .uzr.u-pic {
+            width: 51px !important;
+            height: 51px !important;
+            border-radius: 0% !important;
+            margin-left: 1px !important;
+            margin-top: 1px !important;
+        }
+
+        .hmsg {
+            background-color: linen !important;
+        }
