@@ -1,0 +1,139 @@
+
+        /* #micHtml .micSp.green {
+            border-color: green!important;
+        }
+        #micHtml .micSp.red {
+            border-color: red!important;
+        }
+#micHtml {
+    display: none;
+    height: 48px;
+    margin-left: 2px;
+    color: #ffffff;
+    border: 1px solid#f9f9f9!important;
+    border-radius: 0px;
+    background-color: #4c6a8c!important;
+     background-image: url(https://i.imgur.com/eqGvZEC.gif)!important; 
+    font-family: 'Almarai', sans-serif;
+}
+#micHtml {
+    text-align: left;
+    height: 50px;
+}
+#micHtml .micSp .micModal button[datacl="muteed"],#micHtml .micSp .micModal button[datacl="mute"]{
+    display: block;
+}
+#micHtml .micSp .micModal button[datacl="play"],#micHtml .micSp .micModal button[datacl="run"]{
+    display: none;
+}
+#micHtml .micSp.muted .micModal button[datacl="muteed"],#micHtml .micSp.memuted .micModal button[datacl="mute"]{
+    display: none!important;
+}
+#micHtml .micSp.muted .micModal button[datacl="play"],#micHtml .micSp.memuted .micModal button[datacl="run"]{
+    display: block!important;
+}
+    span.fa.fa-microphone{
+        margin-top: 2px;
+        font-weight: 100!important;
+        font-size: 20px !important;
+    }
+#micHtml #allMute.muted {
+    background-image: url(/mic/unmeut.png);
+}
+    #micHtml .micSp.muted:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    background: #f00;
+    content: "";
+    width: 100%;
+    display: block;
+    transform: rotate(135deg);
+}
+    #micHtml .micSp {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 0px;
+    background-color: #dcdcdc;
+    color: #000;
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 .3rem;
+    border: 3px solid #989594;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url('/mic/mic.gif');
+}
+#micHtml #allMute {
+    background: #fff;
+    width: 37px;
+    height: 37px;
+    border-radius: 0px;
+    padding: .2rem;
+    display: inline-block;
+    float: right;
+    margin-right: .2rem;
+    margin-top: .2rem;
+    border: 1px solid;
+    box-shadow: 0 0 5px 0 #5d5d5d;
+    cursor: pointer;
+    background-size: contain;
+    background-image: url(/mic/meut.png);
+}
+    
+    
+    #micHtml .micSp img {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0px;
+    display: none;
+}
+    #micHtml .micSp .micName {
+    font-size: .53rem;
+    max-width: 50px;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: -.45rem;
+    z-index: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 50px;
+}
+    
+    #micHtml .micModal {
+    position: absolute;
+    border-radius: 0px;
+    background-color: #daa520;
+    top: 46px;
+    width: 80px;
+    z-index: 2;
+    left: -16px;
+    padding: .4rem;
+    height: auto;
+    display: none;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #9e9e9e;
+}
+    #micHtml .micSp .number {
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    right: 15px;
+}
+#micHtml .micModal .btn {
+    display: inline-block;
+    margin-bottom: .2rem;
+    width: 100%;
+    padding: 0!important;
+}   */
+        /* @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); */
+
