@@ -1,0 +1,178 @@
+
+        .hidden {
+            display: none;
+        }
+
+        input[type=checkbox]+label {
+            position: relative;
+        }
+
+        input[type=checkbox]:checked+label {
+            animation: closing 0.9s forwards ease-in-out,
+                moving 0.9s forwards ease-in-out;
+        }
+
+        .pointer-cursor {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .u-msg {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .close {
+
+            float: right;
+            color: #b94b45;
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .alert-message {
+
+            background-color: #f2dede;
+            border: 1px solid rgba(#34495e, 0.25);
+            color: #b94b45;
+            border-radius: 0px;
+            line-height: 30px;
+            position: absolute;
+            top: 50px;
+            left: 400px;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            /* box-sizing: border-box; */
+            color: rgba(255, 255, 255, .9);
+            box-shadow: 0px 10px 50px rgb(0 0 0 / 60%);
+            background: #34495e;
+            z-index: 3;
+            height: 28px;
+            padding-top: 0px;
+            padding-right: 7px;
+            padding-left: 12px;
+            padding-bottom: 8px;
+            font-size: 14px !important;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* .alert-message::after{
+    content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+} */
+
+        @keyframes fadeIn {
+            0% {
+                top: 0px;
+                left: 0px;
+                background: #34495e;
+                width: 800px;
+            }
+
+            10% {
+                top: 10px;
+                left: 0px;
+                background: #34585e;
+                width: 700px;
+            }
+
+            30% {
+                top: 20px;
+                left: 0px;
+                background: #345d54;
+                width: 600px;
+            }
+
+            50% {
+                top: 20px;
+                left: 0px;
+                background: #345d54;
+                width: 600px;
+            }
+
+            70% {
+                top: 30px;
+                left: 0px;
+                background: #275a36;
+                width: 500px;
+            }
+
+            100% {
+                top: 40px;
+                left: 0px;
+                background: #1b5e1b;
+                width: 400px;
+            }
+
+            /* 200% {top: 40px; left: 0px; background: #0b6610; width: 400px;} */
+            /* 70%   {top: 50px; left: 187px; background: #34495e; width: 300px;} */
+            /* 50%   {top: 60px; left: 187px; background: #34495e; width: 200px;}
+  40%   {top: 70px; left: 187px; background: #34495e; width: 100px;}
+  30%   {top: 70px; left: 187px; background: #34495e; width: 100px;}
+  20%   {top: 70px; left: 187px; background: #34495e; width: 100px;}
+  10%   {top: 70px; left: 187px; background: #34495e; width: 100px;} */
+            /* 0%   {top: 80px; background: #34495e; width: 100px;} */
+        }
+
+        @keyframes moving {
+
+            0%,
+            90% {
+                top: -100px;
+                left: 0;
+            }
+
+            100% {
+                top: -100px;
+                left: 0;
+            }
+        }
+
+
+        .tooltiptext {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 0px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: -5;
+            transition: opacity 0.3s;
+        }
+
+        .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltiptext:hover {
+            visibility: visible;
+            opacity: 1;
+        }
